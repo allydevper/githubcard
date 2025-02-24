@@ -18,7 +18,7 @@ def get_image(filename):
 
 @app.route("/api/generateCard")
 def get_generateCard():
-    user_proyect = request.args.get('user-proyect')
+    user_proyect = request.args.get('user-proyect').strip()
 
     def is_valid_repo(text: str) -> bool:
         return bool(re.match(r"^[^/]+/[^/]+$", text))
