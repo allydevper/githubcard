@@ -8,7 +8,6 @@
 ## Características
 - Generación de tarjetas personalizadas para repositorios de GitHub.
 - Soporte para múltiples formatos de salida, incluyendo imágenes y datos JSON.
-- Fácil integración con aplicaciones web y otros servicios.
 - Interfaz intuitiva y fácil de usar.
 
 ## Instalación
