@@ -12,3 +12,4 @@
 
 ## Instalación
 Para instalar `githubcard`, clona el repositorio y asegúrate de tener Python y pip instalados en tu sistema. Además, verifica que las dependencias en `requirements.txt` estén actualizadas.
+.
