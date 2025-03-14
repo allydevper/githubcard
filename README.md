@@ -1,4 +1,4 @@
-# githubcard
+# githubcard.
 
 ## Descripción
 `githubcard` es una herramienta que permite crear tarjetas en formato base64 para obtener información de repositorios de GitHub. Facilita la visualización de datos de repositorios de manera sencilla y rápida, permitiendo a los usuarios acceder a información relevante de manera eficiente. Puedes acceder a la herramienta en [githubcard](https://githubcard.up.railway.app/).
