@@ -10,28 +10,26 @@
 
 <body>
     <div class="min-h-screen bg-[#fce6d4]">
-        <main class="flex items-center justify-center min-h-screen px-6 py-6 max-w-7xl mx-auto grid grid-cols-2 gap-6">
+        <main class="flex items-center justify-center min-h-screen px-6 py-6 max-w-7xl mx-auto grid sm:grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-
-                <h1 class="text-6xl font-bold leading-tight mb-6">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
                     Genera simples cards para tus proyectos de Github.
                 </h1>
 
-                <p class="text-lg text-gray-700 mb-8">
+                <p class="text-base md:text-lg text-gray-700 mb-8">
                     Sin complejidad, genera una card para el proyecto que desees, realizado con python y Flask.
                 </p>
 
-                <div class="flex gap-4 mb-8">
-                    <a href="https://github.com/allydevper/githubcard" target="_blank" class="cursor-pointer px-6 py-3 bg-black text-white rounded-full hover:bg-black/80">
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                    <a href="https://github.com/allydevper/githubcard" target="_blank" class="cursor-pointer px-6 py-3 bg-black text-white rounded-full hover:bg-black/80 text-center">
                         Ver el codigo Fuente
                     </a>
                 </div>
             </div>
 
             <div class="relative">
-                <div class="bg-[#c1f0c1] rounded-3xl p-8 h-full">
+                <div class="bg-[#c1f0c1] rounded-3xl p-6 md:p-8 h-full">
                     <div class="bg-white rounded-xl p-4 shadow-lg mx-auto">
-
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -46,9 +44,9 @@
                             </div>
                         </div>
 
-                        <div class="mt-4 flex">
+                        <div class="mt-4 flex flex-col sm:flex-row">
                             <input type="text" placeholder="usuario/proyecto" id="user-proyect"
-                                class="w-full p-2 border border-gray-300 rounded-lg mr-2" />
+                                class="w-full p-2 border border-gray-300 rounded-lg mb-2 sm:mb-0 sm:mr-2" />
                             <button onclick="generateCard()"
                                 class="cursor-pointer w-full bg-black text-white rounded-lg py-2 hover:bg-black/80">Generar
                                 Card</button>
@@ -56,7 +54,7 @@
                     </div>
 
                     <div id="container-image" class="mt-4">
-                        <img src="{{ url_for('static', filename='images/preview.png') }}" class="shadow-lg rounded-xl">
+                        <img src="{{ url_for('static', filename='images/preview.png') }}" class="shadow-lg rounded-xl max-w-full">
                     </div>
                 </div>
             </div>
